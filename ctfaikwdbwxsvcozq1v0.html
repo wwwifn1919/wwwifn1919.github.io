@@ -5,13 +5,55 @@
     <title>IFN Kontingenter</title>
     <style>
     </style>
+    <script type="text/javascript" language="JavaScript">
+      function HideContent(d) {
+      document.getElementById(d).style.display = "none";
+      }
+      function ShowContent(d) {
+      document.getElementById(d).style.display = "block";
+      }
+      function ReverseDisplay(d) {
+      if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+      else { document.getElementById(d).style.display = "none"; }
+      }
+    </script>
   </head>
   <body>
     <div style="margin-left:10px;margin-right:10px;">
       <script type="text/javascript" src="https://www.conventus.dk/dataudv/www/medlemslogin.php?foreningsid=3079&layout=1&boks=1&popup=1"></script>
-      <div><a href="vejledning_kontingentbetaling_30-10-13.doc" target="_blank">Find en vejledning til kontingentbetaling ved at klikke her.</a></div>
-      &nbsp;<br />
-      <script type="text/javascript" src="https://www.conventus.dk/dataudv/www/holdoversigt3.php?foreningsid=3079&afdelingsid=0&handelsbetingelser=1&reservationer=vis&skjul_nyt_medlem=0&skjul_allerede_medlem=0&vindue=popup&kolone1_width=50&kolone2_width=50&min_height=250"></script>
+      <br />
+      <a href="javascript:ReverseDisplay('vejledningmulti')">
+	Multi eller Power-kontingent Vejledning (vis).</a>
+      <div id="vejledningmulti" style="display:none;">
+	Hvis du er under 18 år skal du betale multi- eller powerkontingent én
+	gang om året.  Du skal først betale kontingentet <em><strong>Børn -
+	Multi-idræt 0-10 år</strong></em> eller <em><strong>Børn - Power-idræt
+	11-18 år</strong></em> afhængig af aldersgruppe. Herefter kan du
+	tilmelde dig den enkelte aktivitet hold for hold. Du skal bruge den
+	samme <em>E-mail el. mobil</em> og <em>adgangskode</em> for hvert hold
+	du tilmeldes. Hvis der er spørgsmål er du velkommen til at sende en
+	mail til kontingenter@ifn.dk eller ringe til Birgit Svendsen 29792687.
       </div>
+      <br />
+      <br />
+      <a href="javascript:ReverseDisplay('vejledning')">
+	Vejledning (vis)</a>
+      <div id="vejledning" style="display:none;">
+      <ol>
+	<li>Klik på det hold du gerne vil deltage på i listen nedenfor.</li>
+	<li>Klik på knappen "Tilmeld" i det grå felt.</li>
+	<li>Indtast deltagerens oplysninger eller indtast brugernavn og
+	  adgangskode, hvis du har modtaget et. Det er meget vigtigt at
+	  indtaste mobilnr og e-mail adresse.  Melder du dit barn til er det
+	  meget vigtig at det er barnets personlige oplysninger og din egen
+	  e-mail adresse.</li>
+	<li>Klik "Tilmeld" og følg vejledningen.
+	  Du modtager nu en mail som bekræftelse, der også indeholder en adgangskode du fremover kan bruge ved tilmeldinger.</li>
+      </ol>
+      </div>
+      <br />
+      <br />
+      <script type="text/javascript" src="https://www.conventus.dk/dataudv/www/holdoversigt3.php?foreningsid=3079&afdelingsid=0&handelsbetingelser=1&reservationer=vis&skjul_nyt_medlem=0&skjul_allerede_medlem=0&vindue=popup&kolone1_width=50&kolone2_width=50&min_height=250"></script>
+    </div>
   </body>
 </html>
