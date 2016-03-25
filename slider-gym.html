@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <title>IFN Slider</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+      $('#slider').nivoSlider({
+      effect: 'none',                 // Specify sets like: 'fold,fade,sliceDown'
+      slices: 1,                     // For slice animations
+      boxCols: 8,                     // For box animations
+      boxRows: 4,                     // For box animations
+      animSpeed: 500,                 // Slide transition speed
+      pauseTime: 3000,                 // How long each slide will show
+      startSlide: 0,                     // Set starting Slide (0 index)
+      directionNav: false,             // Next & Prev navigation
+      controlNav: false,                 // 1,2,3... navigation
+      controlNavThumbs: false,         // Use thumbnails for Control Nav
+      pauseOnHover: false,             // Stop animation while hovering
+      manualAdvance: false,             // Force manual transitions
+      prevText: '',                 // Prev directionNav text
+      nextText: '',                 // Next directionNav text
+      randomStart: true,             // Start on a random slide
+      beforeChange: function(){},     // Triggers before a slide transition
+      afterChange: function(){},         // Triggers after a slide transition
+      slideshowEnd: function(){},     // Triggers after all slides have been shown
+      lastSlide: function(){},         // Triggers when last slide is shown
+      afterLoad: function(){}         // Triggers when slider has loaded
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="slider" class="nivoSlider">
+      <img src="https://lh3.googleusercontent.com/UYocfvjQ0zRhcAdOakN168N4p1-ClpH_-MvlTGj1iZUtexrETtCCCdXOf4b2VXDpmUzgkrFREcM=w1497-h992-no" alt="" />
+      <img src="https://lh3.googleusercontent.com/Nz6vtjHwldzBCjWoy-R-FpZ4CVqEGDOcjP1TTyofGwC0liEukd8-YJAT9Zf3gRPBI2NBEvSrDSY=w1498-h992-no" alt="" />
+      <img src="https://lh3.googleusercontent.com/7Ly-kZQ6KLqj6TheEkJ7DWjrKsUVXjjXfhHs1I3OYljotliYqvsscso5WXJ2t93J-fdbqnZNuDc=w1497-h992-no" alt="" />
+      <img src="https://lh3.googleusercontent.com/Kivjhc1TRUz-H6VJyPCc4UshGE0g1xc529hQ4yVLcv0Rqnba6npCZUsuhAOv-elJ1hdm5NF_46o=w1764-h992-no" alt="" />
+      <img src="https://lh3.googleusercontent.com/vKK1J7T8mt4m1wbOO5BYZdzYJ3_S-bUgxS4eAUZphKG9SxkJu1L3NjikeyCJnKewXWvAUDlk-70=w1764-h992-no" alt="" />
+      <img src="https://lh3.googleusercontent.com/HjQpJ43Zl7j5vRt9xvIAN4_-CSEZo1DO-foVbmg6i4TpWAde6CRmpeO9f4KhAYgepR6Fix5WJMk=w1764-h992-no" alt="" />
+    </div>
+  </body>
+</html>
