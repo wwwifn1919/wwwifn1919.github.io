@@ -3,30 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <title>IFN Kontingenter</title>
-    <style>
-      ul { list-style: none; margin-left: 0.1em; padding-left: 1em;
-      text-indent: -1em; } ul li { padding: 0.2em 0em 0em 0em; } ul li:before {
-      content: "\0BB \020"; }
+    <style type="text/css">
+      ul { list-style: none; margin-left: 0.1em; padding-left: 1em; text-indent: -1em; }
+      ul li { padding: 0.2em 0em 0em 0em; }
+      ul li:before { content: "\0BB \020"; }
+      h2 { color: #117b29;}
+      h1 { color: #117b29;}
+      a {color: rgb(0, 137, 201);
+border-collapse: separate;
+cursor: auto;
+font-family: "Open Sans", sans-serif;
+height: 1.5em;
+      line-height: 1.5em;
+      text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
     </style>
   </head>
-  <body bgcolor="#E6E6FA" width="1188" style="padding-bottom: 100hv;">
-    <div style="background-color: lightblue;width: 1188px;margin: auto;border: 2px solid #0x222222;">
+  <body bgcolor="#80974b" width="1188" style="padding-bottom: 100hv;">
+    <div style="font-size: 16px;background-color: white;width: 1188px;padding: 5px; margin: auto;border: 1px solid #000;">
       <p>
 	<ul>
-	  <li><a href="#hold">Holdtilmelding</a></li>
-	  <li><a href="#fitness">Tilmelding og betaling af fitness</a></li>
-	  <li><a href="#login">Login</a></li>
-	  <li><a href="#vejledningmulti">Multi eller Power-kontingent Vejledning</a></li>
+	  <li><a href="#vejledningmulti">Multi- eller Power-kontingent Vejledning (0-18 år)</a>
+	  <li><a href="#hold">Tilmelding til hold</a></li>
+	  <li><a href="#fitness">Tilmelding til spinning og motionscenter &mdash; <strong><em>klik HER</em></strong></a></li>
+	  <li><a style="font-size: 0.8em;" href="#login">Login (se allerede tilmeldte hold)</a></li>
+	  </li>
 	</ul>
       </p>
 
+      <div id="vejledningmulti">
+	<h1>Multi eller Power-kontingent</h1>
+
+	Hvis du er under 18 år skal du betale multi- eller powerkontingent én
+	gang om året.  Du skal først betale kontingentet
+
+	<a href="#" onClick="window.open('https://www.conventus.dk/dataudv/www/new_tilmelding.php?foreningsid=3079&gruppe=454841&skjul_nyt_medlem=0&skjul_allerede_medlem=1', 'Tilmeld', 'left=' + ( (screen.availWidth - 800 - 12) / 2) + ',top=' + ((screen.availHeight - 600 - 31) / 2) + ',width=800,height=660,menubar=no,toolbar=no,location=no,status=no,scrollbars=yes,resizable=yes');return false;"><em><strong>Børn -
+	      Multi-idræt 0-10 år</strong></em></a>
+
+	eller <a href="#" onClick="window.open('https://www.conventus.dk/dataudv/www/new_tilmelding.php?foreningsid=3079&gruppe=454844&skjul_nyt_medlem=0&skjul_allerede_medlem=1', 'Tilmeld', 'left=' + ( (screen.availWidth - 800 - 12) / 2) + ',top=' + ((screen.availHeight - 600 - 31) / 2) + ',width=800,height=660,menubar=no,toolbar=no,location=no,status=no,scrollbars=yes,resizable=yes');return false;">
+						       <em><strong>Børn - Power-idræt
+	11-18 år</strong></em></a> afhængig af aldersgruppe. Herefter kan du
+	tilmelde dig den enkelte aktivitet hold for hold. Du skal bruge den
+	samme <em>E-mail el. mobil</em> og <em>adgangskode</em> for hvert hold
+	du tilmeldes. Hvis der er spørgsmål er du velkommen til at sende en
+	mail til kontingenter@ifn.dk eller ringe til Birgit Svendsen 29792687.
+      </div>
+
       <div id="hold">
-	<h2>Holdtilmelding</h2>
+	<h1>Tilmelding til hold</h1>
 	<script type="text/javascript" src="https://www.conventus.dk/dataudv/www/holdoversigt3.php?foreningsid=3079&afdelingsid=0&handelsbetingelser=1&reservationer=vis&skjul_nyt_medlem=0&skjul_allerede_medlem=0&vindue=popup&kolone1_width=50&kolone2_width=50&min_height=250"></script>
       </div>
       
       <div id="fitness">
-	<h2>Tilmelding og betaling af fitness</h2>
+	<h1>Tilmelding til spinning og motionscenter</h1>
 	<!-- <p><a href="JavaScript:newPopup('betingelser-abonement.html');">Handelsbetingelser</a></p> -->
 	<script type="text/javascript" src="https://www.conventus.dk/dataudv/www/abonnement.php?foreningsid=3079&abonnementsgruppe=0&vis_abonnementer=1"></script>
 	<iframe src="https://www.conventus.dk/dataudv/www/booking.php?idv1=0&idv2=08:00&idv3=21:00&idv4=22917&idv5=3079&navn=skjul&ressourceliste=skjul&banebooking=skjul&login_boks=skjul&handelsbetingelser=vis&engine_error=vis&alt_farver=vis" style="width: 560px; height: 720px; border: 0px;">
@@ -34,30 +64,17 @@
       </div>
 
       <div id="login">
-	<h2>Login</h2>
+	<h1>Login</h1>
 	Login for at rette i stamoplysninger, se allerede tilmeldte hold osv.
 	<script type="text/javascript" src="https://www.conventus.dk/dataudv/www/medlemslogin.php?foreningsid=3079&layout=1&boks=1&popup=1">
 	</script>
-      </div>
-
-      <div id="vejledningmulti">
-	<h2>Multi eller Power-kontingent Vejledning</h2>
-
-	Hvis du er under 18 år skal du betale multi- eller powerkontingent én
-	gang om året.  Du skal først betale kontingentet <em><strong>Børn -
-	Multi-idræt 0-10 år</strong></em> eller <em><strong>Børn - Power-idræt
-	11-18 år</strong></em> afhængig af aldersgruppe. Herefter kan du
-	tilmelde dig den enkelte aktivitet hold for hold. Du skal bruge den
-	samme <em>E-mail el. mobil</em> og <em>adgangskode</em> for hvert hold
-	du tilmeldes. Hvis der er spørgsmål er du velkommen til at sende en
-	mail til kontingenter@ifn.dk eller ringe til Birgit Svendsen 29792687.
       </div>
 
       <div id="spacing" style="hight:10px;margin=auto"></div>
     </div>
     <script language="javascript">
       function autoResizeDiv() { var last_height =
-      document.getElementById('vejledningmulti').clientHeight; last_height =
+      document.getElementById('login').clientHeight; last_height =
       window.innerHeight - last_height;
       document.getElementById('spacing').style.height = last_height +'px'; }
       window.onresize = autoResizeDiv; autoResizeDiv();
